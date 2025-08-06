@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    {% csrf_token %}
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">AMAN'S BLOGs</a>
@@ -44,5 +46,9 @@
         </div>
     </div>
     </nav>
+    {% block content %}
+
+    
+    {% endblock %}
 </body>
 </html>
